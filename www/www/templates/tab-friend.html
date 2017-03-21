@@ -1,0 +1,13 @@
+<ion-view view-title="friend">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat=" friend in friends" ng-href="#/tab/friend/{{friend.id}}">
+                <img ng-src={{friend.face}} alt="">
+                <h2>{{friend.name}}</h2>
+                <ion-option-button class="button-assertive" ng-click="remove(friend)">
+                    Delete
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
